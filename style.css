@@ -1,0 +1,463 @@
+/* generalizing starts*/
+
+* {
+    box-sizing: border-box;
+    
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+p {
+    font-weight: 300;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.row {}
+
+/* generalizing ends */
+
+/* header starts */
+
+header {}
+
+/* navbar starts */
+
+nav {
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: #2E323F;
+    text-align: center;
+    /*causing logo and nav items to come in center*/
+}
+
+.nav__flex {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: .5em 0;
+}
+
+/* i copy paste this code to create nav toggle because i don't know how to make it */
+
+.nav-toggle {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 3em;
+    height: 3em;
+    padding: 0em;
+    border-radius: 50%;
+    background: #6F737F;
+    color: white;
+    transition: opacity 250ms ease;
+    position: absolute;
+    left: 4%;
+    top: .5em;
+}
+
+.nav-toggle:focus, .nav-toggle:hover {
+    opacity: .75;
+}
+
+.hamburger {
+    width: 50%;
+    position: relative;
+}
+
+.hamburger, .hamburger::before, .hamburger::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    width: 100%;
+}
+
+.hamburger::before {
+    transform: translateY(-6px);
+}
+
+.hamburger::after {
+    transform: translateY(3px);
+}
+
+.logo {
+    height: 30px;
+    margin: 0 auto;
+}
+
+.nav {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+    width: 100%;
+    margin-top: .5em;
+}
+
+.nav__item {
+    margin: .75em 0;
+}
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
+.nav__link {
+    color: rgb(216, 219, 228);
+    padding: .25em 1em;
+    border-radius: 2em;
+    text-transform: uppercase;
+}
+
+.nav__link:hover {
+    background-color: #A59678;
+    cursor: pointer;
+}
+
+/* navbar ends */
+
+/* i copy paste this code to create nav toggle because i don't know how to make it */
+
+/* main page starts */
+
+main {
+    min-height: 100vh;
+    background-color: #3B4050;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero--section{
+   padding: 4em 0;
+}
+.hero__div{
+    text-align: center;
+}
+
+.hero__title {
+    text-align: center;
+}
+
+.hero__title>h1, .footer__title {
+    font-size: 4rem;
+    line-height: 1;
+    font-family: 'Oswald', sans-serif !important;  
+    font-weight: bold;
+
+}
+
+.white {
+    color: white;
+}
+
+.gold {
+    color: #A59678;
+}
+
+.hero__details>p {
+    font-size: 1.15rem;
+    color: white;
+    line-height: 1.75;
+}
+
+.hero__button {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 800;
+    padding: .5em 1.5em;
+    background-color: #A59678;
+    border-radius: 100px;
+    text-transform: uppercase;
+    margin-top: 1em;
+    /* font-family: 'Oswald', sans-serif;
+    font-weight: bold; */
+}
+.hero__button:hover {
+    opacity: .76;
+    cursor: pointer;
+}
+
+/* main page ends  */
+
+/* header ends */
+
+/* section 2 starts*/
+
+.section2 {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.sec2__div+.sec2__div {
+    margin-top: 2em;
+}
+
+.sec2__title, .footer__details__title {
+    font-weight: bolder;
+    color: #A59678;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.sec2__title {
+    font-size: 1.5em;
+}
+
+.sec2__paragraph, .sec3__main__para, .aside__para, .footer__details__items {
+    color: #6F737F;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 0;
+    font-weight: medium;
+}
+
+/* section 2 ends */
+
+/* section3 starts */
+
+.sec3__main__title {
+    color: #A59678;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.sec3__main__title, .footer__title {
+    margin-top: 0;
+}
+
+.sec3__main__image {
+    max-height: 300px;
+    width: 100%;
+    margin: .5em 0;
+}
+
+.aside__div {
+    background-color: #2E323F;
+    padding: 1em 1.25em;
+}
+
+.sec3__aside {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.aside__div+.aside__div {
+    margin-top: 2em;
+}
+
+.aside__title {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.aside__para {
+    color: whitesmoke;
+}
+
+/* section3 ends */
+
+/* footer starts */
+
+footer {
+    background-color: #3B4050;
+}
+
+.footer--title--div {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.footer__title {
+    color: whitesmoke;
+}
+
+.footer__details__items {
+    margin-bottom: .5em;
+    color: whitesmoke;
+}
+
+.footer__details__div {
+    margin-top: 2em;
+}
+
+/* footer ends */
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    
+    .nav__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-toggle {
+        visibility: hidden;
+    }
+    .nav {
+        margin: 0;
+        position: static;
+        visibility: visible;
+        margin-left: auto;
+        width: auto;
+        /*width 100% in mobile version was causing problem
+                    to hav spave between nav__items and logo so have to give it width auto*/
+    }
+    .nav__list {
+        display: flex;
+    }
+    .nav__item {
+        margin: 0;
+    }
+    .nav__link {
+        font-size: 1rem;
+    }
+    .home__div{
+        text-align: left;
+        width: 100%;
+        max-width: 600px;
+    }
+    .hero__title {
+        text-align: left;
+        width: 100%;
+    }
+    .hero__details{
+        text-align: left;
+    }
+    /* hero page title was causing issue so always set headings
+    to margin 0 when doing display flex */
+    .hero__title>h1, .footer__title {
+        font-size: 3rem;
+        font-weight: 900;
+        margin: 0;
+    }
+    .sec2--container {
+        display: flex;
+    }
+    .sec2__div+.sec2__div {
+        margin-top: 0em;
+        margin-left: 1.5em;
+    }
+    .sec3__aside {
+        display: flex;
+    }
+    .aside__div+.aside__div {
+        margin-top: 0;
+        margin-left: 1em;
+    }
+    /* .footer--div {
+        text-align: center;
+    } */
+}
+
+
+@media (min-width: 1050px) {
+    .container{
+        padding: 5em 0;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero__title>h1, .footer__title {
+        font-size: 5rem;
+    }
+    
+    .hero__title {
+        width: 40%;
+        /*causing hero title to gain less space */
+        margin-top: auto;
+    }
+    .hero__details {
+        width: 50%;
+        margin-top: auto;
+        /* margin-bottom: 2em; */
+    }
+    .hero__details p {
+        width: 80%;
+    }
+    .sec2__div+.sec2__div {
+        margin-top: 0em;
+        margin-left: 3.5em;
+    }
+    .sec3__main {
+        width: 55%;
+    }
+    .sec3__main__image {
+        max-height: 450px;
+    }
+    .sec3__aside {
+        flex-direction: column;
+        width: 30%;
+        margin: 0;
+        /*causing it to stick upwards*/
+    }
+    .aside__div+.aside__div {
+        margin-top: 1em;
+        margin-left: 0em;
+    }
+    .footer__title {
+        text-align: center;
+    }
+    .footer__details {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2em;
+    }
+    .footer__details__div {
+        width: 17.5%;
+    }
+    .footer__details__div__first {
+        width: 30%;
+    }
+    /* .footer__details__div+.footer__details__div {
+        margin-left: 1em;
+    } */
+}
